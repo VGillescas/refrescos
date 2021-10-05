@@ -13,21 +13,19 @@
 
 </head>
 <body>
-    <section class="form-login">
-        
-      
-        <h5>Ingrese sus datos para ingresar la página de inicio</h5>
-        
-        
-            <form name="frmingreso"> 
-            <input class="controls" type="text" name="txtusuario" placeholder="Ingrese usuario">
-            <input class="controls" type="password" name="txtcontraseña" placeholder="Ingrese contraseña">
-            <input class="buttons" type="button" value="ingresar" onclick=ingresar()>
-            <p><a href="#">¿Olvidaste tu Contraseña?</a></p>
+    
+        <section class="form-login">
+            <form onsubmit="return validarUsuario()" name="formulario" action="Inicio.html">
+            <h5>Formulario Login</h5>
+            <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
+            <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
+            <input class="buttons" type="submit" value="Ingresar">Ingresar</button>
+            <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
         </form>
+        </section>
 
         
-    </form>
+    
     <br>
 
     <p>
